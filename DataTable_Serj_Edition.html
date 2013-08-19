@@ -6,7 +6,7 @@
 		<script src="http://code.jquery.com/ui/1.9.0/jquery-ui.js"></script>
 	</head>
 	
-	<body background = "http://www.wallsave.com/wallpapers/2560x1600/bamboo-forest/2871413/bamboo-forest-mac-os-green-x-2871413.jpg" link = "black">
+	<body background = "http://images5.fanpop.com/image/photos/31800000/Serj-Tankian-system-of-a-down-31823285-1920-1080.jpg" link = "black">
 		<div align = "center">
 			<p>
 				<font size = "5">
@@ -27,21 +27,40 @@
 			</table>
 			<br>
 			
-			<button id="b1" >Press me!</button>	
-			<button id="b2" >Then press me!</button>
-		</div>	
+			<button id="b1" >Next background --></button>
+			<button id="b2" >Next background --></button>
+			<button id="b3" >Next background --></button>
 		
-			
+		</div>	
+
+
+
 		</p>
 	
 		<script>
-			$ ('#b1').click(function() {
-				$('table').animate({color: '#FFF'}, 1500);
-			});
 			
-			$ ('#b2').click(function() {
-				$('table').animate({color: '#000'}, 1500);
-			});
+			$('#b2').hide();
+			$('#b3').hide();
+			
+			$('#b1').on('click', function() {
+				$('body').css('background-image', 'url(http://fanart.tv/fanart/music/e471b63c-c3b5-4f62-a971-cd0b2273838f/artistbackground/tankian-serj-50104ccea37cd.jpg)');
+				$('#b1').hide();
+				$('#b2').show();
+			})
+			
+			$('#b2').on('click', function() {
+				$('body').css('background-image', 'url(http://radiominsk.by/Uploads/0b25febc-b765-4c33-bff1-80322db2b4ba.jpg)');
+				$('#b2').hide();
+				$('#b3').show();
+			})
+			
+			$('#b3').on('click', function() {
+				$('body').css('background-image', 'url(http://images5.fanpop.com/image/photos/31800000/Serj-Tankian-system-of-a-down-31823285-1920-1080.jpg)');
+				$('#b3').hide();
+				$('#b1').show();
+			})
+			
+			
 		</script>
 	</body>
 </html>

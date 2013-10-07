@@ -1,7 +1,7 @@
-require "csv"
-require "date"
+require 'csv'
+require 'date'
 
-f_date = DateTime.strptime(ARGV[0], '%d/%m/Y')
+f_date = DateTime.strptime(ARGV[0], '%d/%m/%Y')
 s_date = DateTime.strptime(ARGV[1], '%d/%m/%Y')
 
 inc = 0.00
